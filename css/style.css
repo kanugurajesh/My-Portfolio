@@ -189,6 +189,7 @@ a {
 }
 
 #section-three {
+    padding: 4rem 2rem;
     text-align: center;
     background-color: #444;
 }
@@ -229,4 +230,33 @@ a {
     opacity: 0.9;
     line-height: 1.5;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #000;
+    color: var(--fs-color);
+    font-family: var(--fs-family2);
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+a {
+    color: var(--fs-color);
+}
+
+footer ul {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
