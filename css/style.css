@@ -120,6 +120,14 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    outline: 5px solid var(--fs-color);
+}
+
+#btn:hover {
+    outline-offset: 2px;
+    background-color: var(--fs-normal-color);
+    color: var(--fs-color);
+    transition: outline-offset 0.1s ease-in-out;
 }
 
 #section-one div+div {
