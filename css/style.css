@@ -1,270 +1,80 @@
 *,
-*::after,
-*::before {
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-nav {
+.header-one {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px; */
 }
 
-nav div {
+.header-one>div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.header-one div div {
     width: 30px;
+    background-color: black;
     height: 2px;
-    background-color: #000;
-    margin: 3px 0;
+}
+
+.header-one p {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    line-height: 1.5;
 }
 
 :root {
-    --fs-family: 'Source Sans Pro', sans-serif;
-    --fs-family2: 'Inter', sans-serif;
-    --fs-h1: 3rem;
+    --fs-family1: 'Inter', sans-serif;
+    --fs-family2: 'Montserrat', sans-serif;
+    --fs-fs1: 1.5rem;
+    --fs-fs2: 2.2rem;
     --fs-color: #16E0BD;
-    --fs-normal-color: #fff;
 }
 
-#header-one {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.header-two {
+    display: grid;
+    gap: 20px;
+    text-align: center;
+    font-size: var(--fs-fs2);
+}
+
+#header-two-p1 {
+    font-family: var(--fs-family2);
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+#header-two-p2 {
+    font-family: var(--fs-family1);
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+#header-two-p3 {
+    font-family: var(--fs-family2);
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    background-color: var(--fs-color);
+}
+
+#header-two-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     padding: 20px;
 }
 
-#header-one h1 {
-    font-size: larger;
-}
-
-#header-two {
-    padding: 40px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: lighter;
-    font-family: var(--fs-family);
-}
-
-.background {
-    background-color: var(--fs-color);
-    max-width: 100%;
-    padding: 1rem 2rem;
-}
-
-#header-two img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-}
-
-h1 {
-    font-size: var(--fs-h1);
-    font-family: var(--fs-family2);
-    color: var(--fs-color);
-}
-
-#section-one {
-    background-image: url("../img/laptop.jpg");
-    background-size: cover;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem 2rem;
-    color: var(--fs-normal-color);
-}
-
-#section-one h1::after {
-    background-color: var(--fs-color);
-    content: "";
-    display: block;
-    width: 50%;
-    height: 2px;
-    margin: 2rem auto;
-    opacity: 0.5;
-}
-
-h3 {
-    font-size: 1.2rem;
-    font-family: var(--fs-family2);
-    color: var(--fs-color);
-}
-
-#section-one p {
-    letter-spacing: 1px;
-    line-height: 1.2;
-    opacity: 0.9;
-}
-
-a {
-    text-decoration: none;
-}
-
-#btn {
-    letter-spacing: 1px;
-    width: 200px;
-    height: 50px;
-    background-color: var(--fs-color);
-    border: none;
-    border-radius: 5px;
-    color: var(--fs-normal-color);
-    font-family: var(--fs-family2);
-    font-size: 1rem;
-    margin: 4rem 0;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    outline: 5px solid var(--fs-color);
-}
-
-#btn:hover {
-    outline-offset: 2px;
-    background-color: var(--fs-normal-color);
-    color: var(--fs-color);
-    transition: outline-offset 0.1s ease-in-out;
-}
-
-#section-one div+div {
-    margin-top: 2.5rem;
-}
-
-#section-one div {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 500px;
-}
-
-#section-one p {
-    font-size: 1.1rem;
-}
-
-#section-two {
-    padding: 4rem 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    text-align: center;
-}
-
-#section-two p {
-    font-size: 1.2rem;
-    font-family: var(--fs-family);
-    letter-spacing: 1px;
-    width: 300px;
-    background-color: var(--fs-color);
-    color: var(--fs-normal-color);
-    padding: 1rem 4rem;
-    border-radius: 5px;
-    opacity: 0.9;
-    line-height: 1.5;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-#section-two h1::after {
-    background-color: var(--fs-color);
-    content: "";
-    display: block;
-    width: 50%;
-    height: 2px;
-    margin: 2rem auto;
-    opacity: 0.5;
-}
-
-#section-two div {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 500px;
-}
-
-#section-two div+div {
-    margin-top: 2.5rem;
-}
-
-#section-two img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-}
-
-#section-three {
-    padding: 4rem 2rem;
-    text-align: center;
-    background-color: #444;
-}
-
-#section-three div {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    padding: 4rem 2rem;
-    text-align: center;
-}
-
-#section-three h1::after {
-    background-color: var(--fs-color);
-    content: "";
-    display: block;
-    width: 50%;
-    height: 2px;
-    margin: 2rem auto;
-    opacity: 0.5;
-}
-
-#section-three div img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-}
-
-#section-three p {
-    margin: 0 auto;
-    font-size: 1.2rem;
-    font-family: var(--fs-family);
-    letter-spacing: 1px;
-    width: 300px;
-    background-color: var(--fs-color);
-    color: var(--fs-normal-color);
-    padding: 1rem 4rem;
-    border-radius: 5px;
-    opacity: 0.9;
-    line-height: 1.5;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-footer {
-    background-color: #000;
-    color: var(--fs-color);
-    font-family: var(--fs-family2);
-    padding: 4rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 1rem;
-}
-
-a {
-    color: var(--fs-color);
-}
-
-footer ul {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+header {
+    padding: 20px;
 }
