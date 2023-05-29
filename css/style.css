@@ -1,0 +1,138 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav div {
+    width: 30px;
+    height: 2px;
+    background-color: #000;
+    margin: 3px 0;
+}
+
+:root {
+    --fs-family: 'Source Sans Pro', sans-serif;
+    --fs-family2: 'Inter', sans-serif;
+    --fs-h1: 3rem;
+    --fs-color: #16E0BD;
+    --fs-normal-color: #fff;
+}
+
+#header-one {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#header-one h1 {
+    font-size: larger;
+}
+
+#header-two {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: lighter;
+    font-family: var(--fs-family);
+}
+
+.background {
+    background-color: var(--fs-color);
+    max-width: 100%;
+    padding: 1rem 2rem;
+}
+
+#header-two img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: var(--fs-h1);
+    font-family: var(--fs-family2);
+    color: var(--fs-color);
+}
+
+#section-one {
+    background-image: url("../img/laptop.jpg");
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 2rem;
+    color: var(--fs-normal-color);
+}
+
+#section-one h1::after {
+    background-color: var(--fs-color);
+    content: "";
+    display: block;
+    width: 50%;
+    height: 2px;
+    margin: 2rem auto;
+    opacity: 0.5;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-family: var(--fs-family2);
+    color: var(--fs-color);
+}
+
+#section-one p {
+    letter-spacing: 1px;
+    line-height: 1.2;
+    opacity: 0.9;
+}
+
+a {
+    text-decoration: none;
+}
+
+#btn {
+    letter-spacing: 1px;
+    width: 200px;
+    height: 50px;
+    background-color: var(--fs-color);
+    border: none;
+    border-radius: 5px;
+    color: var(--fs-normal-color);
+    font-family: var(--fs-family2);
+    font-size: 1rem;
+    margin: 4rem 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-one div+div {
+    margin-top: 2.5rem;
+}
+
+#section-one div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+}
+
+#section-one p {
+    font-size: 1.1rem;
+}
