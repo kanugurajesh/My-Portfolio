@@ -249,6 +249,35 @@ header {
     background-color: #444;
 }
 
+footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+}
+
+footer img {
+    width: 37px;
+}
+
+#footer-one {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    font-family: var(--fs-family1);
+}
+
+#footer-two {
+    margin-top: 20px;
+}
+
+#footer-two a+a {
+    margin-left: 20px;
+}
+
 @media (min-width:800px) {
     .header-two {
         grid-template-areas:
@@ -377,7 +406,9 @@ header {
         object-fit: cover;
         max-width: 100%;
         max-height: 100%;
-        /* max-width: 400px; */
-        /* max-height: 400px; */
+    }
+
+    footer img {
+        width: 60px;
     }
 }
