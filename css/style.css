@@ -229,7 +229,7 @@ header {
 }
 
 #section-three h2 {
-    font-size: 1.1rem;
+    font-size: 1.35rem;
     letter-spacing: 2px;
     line-height: 1.5;
     font-family: var(--fs-family1);
@@ -339,7 +339,7 @@ footer img {
             "p1 img"
             "p2 img"
             "p3 img";
-        gap: 0;
+        gap: 10px;
     }
 
     #section-one-div div {
