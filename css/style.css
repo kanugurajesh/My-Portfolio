@@ -158,9 +158,9 @@ header {
 #section-two {
     text-align: center;
     display: grid;
-    /* gap: 30px; */
+    gap: 30px;
     margin: 0 auto;
-    padding: 100px 100px;
+    padding: 100px 20px;
 }
 
 #section-two-h1 {
@@ -211,7 +211,8 @@ header {
 }
 
 #section-three {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
     padding: 100px 20px;
     text-align: center;
@@ -246,6 +247,7 @@ header {
 
 #section-three div {
     margin: 40px 0;
+    background-color: #444;
 }
 
 @media (min-width:800px) {
