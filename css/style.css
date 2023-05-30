@@ -40,11 +40,11 @@
 }
 
 .header-two {
+    max-width: 1000px;
     display: grid;
-    gap: 20px;
     text-align: center;
     font-size: var(--fs-fs2);
-    margin: 50px 0;
+    margin: 50px auto;
 }
 
 #header-two-p1 {
@@ -74,8 +74,119 @@
     height: 100%;
     object-fit: cover;
     padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header {
     padding: 20px;
+}
+
+
+#section-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 50px;
+    background-color: #444;
+    color: white;
+    text-align: center;
+}
+
+#section-one-div {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+#section-one h1 {
+    font-size: 2.5rem;
+    font-weight: 1000;
+    letter-spacing: 2px;
+    line-height: 1.5;
+
+}
+
+#section-one-div div {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+#section-one-div h1 {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#section-one h1::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#section-one a {
+    margin-top: 50px;
+    background-color: var(--fs-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    font-weight: lighter;
+    font-family: var(--fs-family1);
+}
+
+@media (min-width:800px) {
+    .header-two {
+        grid-template-areas:
+            "img p0"
+            "img p1"
+            "img p2"
+            "img p3"
+            "img p4";
+        gap: 5px;
+    }
+
+
+    #header-two-p1 {
+        text-align: right;
+        grid-area: p1;
+        padding-right: 20px;
+    }
+
+    #header-two-p2 {
+        text-align: right;
+        grid-area: p2;
+        padding-right: 20px;
+    }
+
+    #header-two-p3 {
+        grid-area: p3;
+        grid-column: -1 / 1;
+        text-align: right;
+        padding: 20px;
+    }
+
+    #header-two-img {
+        grid-area: img;
+
+    }
 }
