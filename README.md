@@ -1,3 +1,10 @@
+#### ✨ Star my repo if you like it
+<div align="center">
+ <img src="https://github.com/kanugurajesh/Portfolio/assets/120458029/ad26d685-5c0b-489b-84c1-fdb75772d24b" alt="developer portfolio" width="120" height="120">
+</div>
+<br>
+<br>
+
 🚀 **Embark on a Sleek Journey through My Portfolio!**
 
 Hey there! 👋 I'm Rajesh, your friendly full stack web developer on a mission to blend creativity with functionality. Welcome to my digital playground! 🌐✨
@@ -50,11 +57,6 @@ Ready to kickstart something awesome or just want to say hi? I'm just a message 
 Thanks for strolling through my digital realm! Excited about the prospect of working together—let's make magic happen! 🌟✨
 <br>
 <br>
-#### ✨ Star my repo if you like it
- <br>
-<div align="center">
- <img src="https://github.com/kanugurajesh/Portfolio/assets/120458029/ad26d685-5c0b-489b-84c1-fdb75772d24b" alt="developer portfolio" width="120" height="120">
-</div>
 
 # Portfolio
 
